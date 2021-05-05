@@ -1,0 +1,103 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+body{
+    Font size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container{
+    text-align: left;
+    width: 350px;
+    margin: 75px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.card{
+    padding: 35px 35px 55px 35px;
+    line-height: 1.5;
+    color: var(--transparent-white);
+}
+
+.container .card:first-child{
+    background-color: var(--bright-orange);
+    
+}
+
+.card:nth-child(2n){
+    background-color: var(--dark-cyan);
+}
+
+.card:nth-child(3n){
+    background-color: var(--very-dark-cyan);
+}
+
+.card h1 {
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+    font-family: 'big shoulders display', sans-serif;
+    margin: 15px 0 15px 0;
+    font-size: 40px;
+}
+
+.card p{
+    font-family: 'lexend deca', sans-serif;
+    margin: 0 30px 50px 0;
+}
+
+.card a {
+    
+    text-decoration: none;
+    background-color: var(--very-light-gray);
+    padding: 10px 25px;
+    border-radius: 1.5em;
+    font-family: 'lexend deca', sans-serif;
+    transition: ease 0.2s;
+}
+/* better way to select the buttons to change color? */
+.sedan-button {
+    color: var(--bright-orange);
+}
+
+.suv-button {
+    color: var(--dark-cyan);
+}
+
+.luxury-button {
+    color: var(--very-dark-cyan);
+}
+
+.card a:hover {
+    background-color: var(--transparent-white);
+}
+
+@media (min-width: 600px){
+    .container{
+    display: flex;
+    width: 850px;
+}
+
+}
+
